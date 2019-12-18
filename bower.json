@@ -1,7 +1,7 @@
 {
   "name": "next-global",
   "version": "0.0.1",
-  "description": "Global property for next",
+  "description": "nextBoilerplatePackageDescription",
   "main": "dist/next-global.js",
   "authors": [
     "afei"

@@ -1,14 +1,14 @@
 # next-global
-> Global property for next
+> Global property for next.
 
 ## installation
 ```bash
-npm install -S afeiship/next-global --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-global
 ```
 
 ## usage
 ```js
-import 'next-global';
+import '@feizheng/next-global';
 
 nx.global(null);
 nx.$global = { abc: 123 };
