@@ -13,7 +13,7 @@ npm install -S @jswork/next-global
 
 ## usage
 ```js
-import '@feizheng/next-global';
+import '@jswork/next-global';
 
 nx.global(null);
 nx.$global = { abc: 123 };
