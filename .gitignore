@@ -10,4 +10,4 @@ package-lock.json
 
 # vscode localhistory
 .history
-# dist
+dist
