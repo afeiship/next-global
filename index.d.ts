@@ -1,3 +1,8 @@
+interface Options {
+  key?: string;
+  globalKey?: string;
+}
+
 interface NxStatic {
-  // your codes goes here.
+  global: (inInitialData: any, inOptions: Options) => void;
 }
