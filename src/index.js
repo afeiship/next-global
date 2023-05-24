@@ -1,12 +1,12 @@
-var global = global || this || window || Function('return this')();
-var nx = global.nx || require('@jswork/next');
-var DEFAULT_OPTIONS = {
+import nx from '@jswork/next';
+
+const defaults = {
   key: '$global',
   globalKey: '__$GLOBAL__'
 };
 
 nx.global = function (inInitialData, inOptions) {
-  var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
+  var options = nx.mix(null, defaults, inOptions);
   var globalKey = options.globalKey;
   nx[globalKey] = inInitialData || {};
   nx.defineProperty(nx, options.key, {
@@ -21,6 +21,9 @@ nx.global = function (inInitialData, inOptions) {
   });
 };
 
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+  // uniapp3 + vite will throw error
   module.exports = nx.global;
 }
+
+export default nx.global;
