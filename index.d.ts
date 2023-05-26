@@ -1,3 +1,9 @@
+interface Options {
+  key?: string;
+  globalKey?: string;
+  context?: any;
+}
+
 interface NxStatic {
-  global: any;
+  global: (data?: any, options?: Options) => void;
 }
