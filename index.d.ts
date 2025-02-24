@@ -6,4 +6,5 @@ interface Options {
 
 interface NxStatic {
   global: (data?: any, options?: Options) => void;
+  $global: any;
 }
